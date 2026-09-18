@@ -676,3 +676,31 @@ a:hover{color:var(--color-primary-dark)}
   .m-topbar > div { flex-wrap: nowrap !important; gap: 0 !important; font-size: 12px !important; white-space: nowrap; }
   .m-topbar a { gap: 5px !important; }
 }
+
+/* Mobile: botoes do hero menores, cabecalho sem cortar o menu, barra do topo ainda menor */
+@media (max-width: 759px) {
+  .m-herobtns { gap: 10px !important; margin-top: 22px !important; }
+  .m-herobtns a { padding: 12px 22px !important; font-size: 15px !important; }
+  .m-headbtns { gap: 8px !important; flex: 0 0 auto; }
+  .m-headbtns a { padding: 8px 12px !important; font-size: 12px !important; }
+  #mobile-menu-btn { width: 40px !important; height: 40px !important; flex: 0 0 auto; }
+  .m-topbar .azul-label { font-size: 9px !important; letter-spacing: 0.2px !important; }
+  .m-topbar > div { font-size: 10.5px !important; }
+  .m-topbar svg { width: 12px !important; height: 12px !important; }
+}
+@media (max-width: 759px) {
+  header > .azul-container:not(.m-topbar) { gap: 8px !important; min-height: 64px !important; }
+  header > .azul-container:not(.m-topbar) > a { min-width: 0; gap: 8px !important; }
+}
+@media (max-width: 759px) {
+  .m-herobtns { gap: 8px !important; }
+  .m-herobtns a { padding: 10px 18px !important; font-size: 13.5px !important; }
+  header > .azul-container:not(.m-topbar) > a { flex: 1 1 auto; overflow: hidden; }
+  header > .azul-container:not(.m-topbar) > a > .sc-host-x > span { width: 32px !important; height: 32px !important; }
+  header > .azul-container:not(.m-topbar) > a > .sc-host-x > span span { width: 16px !important; height: 16px !important; }
+  header > .azul-container:not(.m-topbar) > a > span { font-size: 15px !important; white-space: nowrap; }
+  header > .azul-container:not(.m-topbar) > a > span span { font-size: 10.5px !important; letter-spacing: 0.2px !important; }
+  .m-headbtns a { padding: 7px 10px !important; font-size: 11px !important; white-space: nowrap; gap: 0 !important; }
+  .m-headbtns a svg { display: none !important; }
+  #mobile-menu-btn { width: 36px !important; height: 36px !important; }
+}
