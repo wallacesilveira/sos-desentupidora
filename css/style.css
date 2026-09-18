@@ -654,3 +654,17 @@ a:hover{color:var(--color-primary-dark)}
   .m-dif .azul-container > div:last-child > div:last-child span span:first-child { font-size: 15px !important; }
   .m-dif .azul-container > div:last-child > div:last-child span span:last-child { font-size: 13px !important; line-height: 1.4; }
 }
+
+/* Mobile: rodape e bloco de contato mais compactos */
+@media (max-width: 759px) {
+  .m-contato a[href^="tel"]:not([style*="inline-flex"]) { font-size: 28px !important; margin-top: 16px !important; }
+  .m-contato h2 { font-size: 24px !important; }
+  .m-contato .azul-container > div:last-child { display: none !important; }
+  .m-footer { padding-top: 28px !important; padding-bottom: 20px !important; }
+  .m-footer > .azul-container:first-child { grid-template-columns: 1fr 1fr !important; gap: 22px 16px !important; }
+  .m-footer > .azul-container:first-child > div,
+  .m-footer .azul-container:first-child > div:nth-child(2) > div { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px 16px !important; }
+  .m-footer p { margin-top: 8px !important; font-size: 13px !important; }
+  .m-footer .azul-container > div > div { gap: 8px !important; margin-top: 10px !important; font-size: 13px !important; }
+  .m-footer > .azul-container:last-child { margin-top: 24px !important; padding-top: 16px !important; font-size: 12px !important; }
+}
