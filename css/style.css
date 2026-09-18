@@ -662,7 +662,7 @@ a:hover{color:var(--color-primary-dark)}
   .m-contato .azul-container > div:last-child { display: none !important; }
   .m-footer { padding-top: 28px !important; padding-bottom: 20px !important; }
   .m-footer > .azul-container:first-child { grid-template-columns: 1fr 1fr !important; gap: 22px 16px !important; }
-  .m-footer > .azul-container:first-child > div,
+  .m-footer > .azul-container:first-child > div { grid-column: 1 / -1; }
   .m-footer .azul-container:first-child > div:nth-child(2) > div { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px 16px !important; }
   .m-footer p { margin-top: 8px !important; font-size: 13px !important; }
   .m-footer .azul-container > div > div { gap: 8px !important; margin-top: 10px !important; font-size: 13px !important; }
